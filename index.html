@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid templete</title>
+    <style>
+      .mydiv {
+        background-color: aqua;
+        width:650px;
+        height:550px;
+        display: grid;
+        grid-template-areas:
+          'area1 area2 area3'
+          'area1 area4 area5'
+          'area6 area4 area7';
+        gap: 2px;
+        padding:2px;
+      }
+       #img1{
+        grid-area: area1;
+       }
+       #img2{
+        grid-area: area2;
+       }
+       #img3{
+        grid-area: area3;
+       }
+       #img4{
+        grid-area: area4;
+       }
+       #img5{
+        grid-area: area5;
+       }
+       #img6{
+        grid-area: area6;
+       }
+       #img7{
+        grid-area: area7;
+       }
+      
+    </style>
+  </head>
+  <body>
+    <div class="mydiv">
+      <img id="img1" src="./Images/apple.jpeg" height="335px" width="200px">
+      <img id="img2" src="./Images/carrot.jpeg" height="150px" width="200px">
+      <img id="img3" src="./Images/cucumber.jpeg" height="150px" width="200px">
+      <img id="img4" src="./Images/Papaya.jpeg" height="335px" width="200px">
+      <img id="img5" src="./Images/mango.jpeg" height="150px" width="200px">
+      <img id="img6" src="./Images/potato.jpeg" height="150px" width="200px">
+      <img id="img7" src="./Images/oranges.jpeg" height="150px" width="200px">
+    </div>
+  </body>
+</html>
